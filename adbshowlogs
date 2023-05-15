@@ -1,0 +1,1 @@
+adb shell pm grant com.dp.logcatapp android.permission.READ_LOGS

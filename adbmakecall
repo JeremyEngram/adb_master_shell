@@ -1,0 +1,3 @@
+#!/bin/bash
+
+read -p "CALL NUMBER: " CALL; adb shell am start -a android.intent.action.CALL -d tel:$CALL

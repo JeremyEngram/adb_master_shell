@@ -1,0 +1,152 @@
+Location Manager State:
+  Current System Time: 10-01 23:25:01.002, Current Elapsed Time: +3h12m48s766ms
+  User Info:
+    current users: [0]
+  Location Settings:
+    Location Enabled: true
+    Throttling Whitelisted Packages:
+      com.motorola.iqimotmetrics
+      com.google.android.gms
+      com.tmobile.echolocate
+    Bypass Whitelisted Packages:
+      com.google.android.dialer
+      com.google.android.gms
+  Battery Saver Location Mode: NO_CHANGE
+  Location Listeners:
+    Reciever[d0ca562 listener UpdateRecord[passive 12631/com.google.android.gms[network_location_provider] Request[POWER_NONE passive] null] monitoring location: false]
+    Reciever[49276f3 listener UpdateRecord[passive 12631/com.google.android.gms[fused_location_provider] Request[POWER_NONE passive] null] monitoring location: false]
+    Reciever[58cdfb0 listener UpdateRecord[passive 1427/android[LocationService] Request[POWER_NONE passive] null] monitoring location: false]
+    Reciever[b430e29 listener UpdateRecord[passive 12631/com.google.android.gms[fused_location_provider] Request[POWER_NONE passive] null] monitoring location: false]
+    Reciever[693b5ae listener UpdateRecord[passive 1427/android[SensorNotificationService] Request[POWER_NONE passive] null] monitoring location: true]
+  Active Records by Provider:
+    gps:
+    passive:
+      UpdateRecord[passive 1427/android[LocationService] Request[POWER_NONE passive] null]
+      UpdateRecord[passive 1427/android[SensorNotificationService] Request[POWER_NONE passive] null]
+      UpdateRecord[passive 12631/com.google.android.gms[fused_location_provider] Request[POWER_NONE passive] null]
+      UpdateRecord[passive 12631/com.google.android.gms[network_location_provider] Request[POWER_NONE passive] null]
+      UpdateRecord[passive 12631/com.google.android.gms[fused_location_provider] Request[POWER_NONE passive] null]
+    network:
+  Historical Records by Provider:
+    gps: com.google.android.gms: fused_location_provider: Interval 0 seconds: Duration requested 0 total, 0 foreground, out of the last 134 minutes: Last active 133 minutes ago
+    network: android: LocationService: Interval 1 seconds: Duration requested 0 total, 0 foreground, out of the last 134 minutes: Last active 134 minutes ago
+    passive: android: LocationService: Interval 0 seconds: Duration requested 192 total, 192 foreground, out of the last 192 minutes: Currently active
+    passive: android: SensorNotificationService: Interval 1800 seconds: Duration requested 192 total, 192 foreground, out of the last 192 minutes: Currently active
+    passive: com.google.android.gms: fused_location_provider: Interval 0 seconds: Duration requested 134 total, 134 foreground, out of the last 134 minutes: Currently active
+    passive: com.google.android.gms: network_location_provider: Interval 0 seconds: Duration requested 134 total, 134 foreground, out of the last 134 minutes: Currently active
+  Last Several Location Requests:
+    At 10-01 20:12:51.513: + passive request from android with feature LocationService at interval 0 seconds
+    At 10-01 20:12:55.947: + passive request from android with feature SensorNotificationService at interval 1800 seconds
+    At 10-01 21:10:36.880: + passive request from com.google.android.gms with feature fused_location_provider at interval 0 seconds
+    At 10-01 21:10:40.011: +     gps request from com.google.android.gms with feature fused_location_provider at interval 0 seconds
+    At 10-01 21:10:41.854: + passive request from com.google.android.gms with feature network_location_provider at interval 0 seconds
+    At 10-01 21:10:42.110: + network request from android with feature LocationService at interval 1 seconds
+    At 10-01 21:10:45.945: + passive request from com.google.android.gms with feature fused_location_provider at interval 0 seconds
+    At 10-01 21:10:50.825: -     gps request from com.google.android.gms with feature fused_location_provider
+    At 10-01 21:10:52.113: - network request from android with feature LocationService
+    At 10-01 21:11:50.696: - passive request from com.google.android.gms with feature network_location_provider
+    At 10-01 21:11:50.772: - passive request from com.google.android.gms with feature fused_location_provider
+    At 10-01 21:11:50.774: - passive request from com.google.android.gms with feature fused_location_provider
+    At 10-01 21:11:54.022: + passive request from com.google.android.gms with feature fused_location_provider at interval 0 seconds
+    At 10-01 21:11:55.900: + passive request from com.google.android.gms with feature network_location_provider at interval 0 seconds
+    At 10-01 21:11:57.543: +     gps request from com.google.android.gms with feature fused_location_provider at interval 0 seconds
+    At 10-01 21:11:59.357: -     gps request from com.google.android.gms with feature fused_location_provider
+    At 10-01 21:12:40.463: + passive request from com.google.android.gms with feature fused_location_provider at interval 0 seconds
+  Geofences:
+  Location Controller Extra Package: com.google.android.gms.location.history [enabled]
+  Location Providers:
+    passive provider:
+      last location=Location[network 35.236432,-80.745687 hAcc=12 et=+58m33s827ms alt=203.89999389648438 vAcc=1 sAcc=??? bAcc=??? {Bundle[mParcelledData.dataSize=68]}]
+      last coarse location=Location[network 35.225225,-80.750016 hAcc=2000 et=+58m33s827ms vAcc=1 sAcc=??? bAcc=???]
+      enabled=true
+      allowed=true
+      properties=ProviderProperties[power=Low, accuracy=Coarse]
+      packages={android}
+      request=ProviderRequest[interval=0]
+    network provider:
+      last location=null
+      last coarse location=null
+      enabled=true
+      allowed=true
+      properties=ProviderProperties[power=Low, accuracy=Coarse, supports=[bearing, speed, altitude]]
+      packages={com.google.android.gms}
+      request=ProviderRequest[OFF]
+      service={com.google.android.gms/com.google.android.location.network.NetworkLocationService}@2[u0]
+      connected=true
+    fused provider:
+      last location=null
+      last coarse location=null
+      enabled=true
+      allowed=true
+      properties=ProviderProperties[power=Low, accuracy=Fine, supports=[bearing, speed, altitude]]
+      packages={com.google.android.gms}
+      request=ProviderRequest[OFF]
+      service={com.google.android.gms/com.google.android.location.fused.FusedLocationService}@1[u0]
+      connected=true
+    gps provider:
+      last location=null
+      last coarse location=null
+      enabled=true
+      allowed=true
+      properties=ProviderProperties[power=High, accuracy=Fine, requires=satellite, supports=[bearing, speed, altitude]]
+      packages={android}
+      request=ProviderRequest[OFF]
+      mStarted=false   (changed +2h13m1s627ms ago)
+      mFixInterval=0
+      mLowPowerMode=false
+      mGnssAntennaInfoProvider.isRegistered()=false
+      mGnssMeasurementsProvider.isRegistered()=false
+      mGnssNavigationMessageProvider.isRegistered()=false
+      mDisableGpsForPowerManager=false
+      mTopHalCapabilities=0x746 ( MSB MSA MEASUREMENTS LOW_POWER_MODE SATELLITE_BLACKLIST MEASUREMENT_CORRECTIONS )
+      SubHal=MEASUREMENT_CORRECTIONS[mCapabilities=0x7 ( LOS_SATS EXCESS_PATH_LENGTH REFLECTING_PLANE )]
+      GNSS_KPI_START
+        KPI logging start time: +39s254ms
+        KPI logging end time: +3h12m48s770ms
+        Number of location reports: 0
+        Number of TTFF reports: 0
+        Number of position accuracy reports: 0
+        Number of CN0 reports: 0
+        Total number of sv status messages processed: 221
+        Total number of L5 sv status messages processed: 0
+        Total number of sv status messages processed, where sv is used in fix: 0
+        Total number of L5 sv status messages processed, where sv is used in fix: 0
+        Number of L5 CN0 reports: 0
+        Used-in-fix constellation types: 
+      GNSS_KPI_END
+      Power Metrics
+        Time on battery (min): 1438.4961666666666
+        Amount of time (while on battery) Top 4 Avg CN0 > 20.0 dB-Hz (min): 0.43945
+        Amount of time (while on battery) Top 4 Avg CN0 <= 20.0 dB-Hz (min): 0.31421666666666664
+        Energy consumed while on battery (mAh): 0.0
+      Hardware Version: PVT
+      native internal state: 
+        Gnss Location Data:: not valid
+      Gnss Time Data:: timeEstimate: 1483228800000, timeUncertaintyNs: 1000, frequencyUncertaintyNsPerSec: 50000
+      Satellite Data for 17 satellites:: 
+      constell: 1=GPS, 2=SBAS, 3=GLO, 4=QZSS, 5=BDS, 6=GAL, 7=IRNSS; ephType: 0=Eph, 1=Alm, 2=Unk; ephSource: 0=Demod, 1=Supl, 2=Server, 3=Unk; ephHealth: 0=Good, 1=Bad, 2=Unk
+      constell: 1, svid:   4, serverPredAvail: 0, serverPredAgeSec:       0, ephType: 0, ephSource: 0, ephHealth: 0, ephAgeSec:       0
+      constell: 1, svid:  16, serverPredAvail: 0, serverPredAgeSec:       0, ephType: 0, ephSource: 0, ephHealth: 0, ephAgeSec:       0
+      constell: 1, svid:  27, serverPredAvail: 0, serverPredAgeSec:       0, ephType: 0, ephSource: 0, ephHealth: 0, ephAgeSec:       0
+      constell: 1, svid:  26, serverPredAvail: 0, serverPredAgeSec:       0, ephType: 0, ephSource: 0, ephHealth: 0, ephAgeSec:       0
+      constell: 1, svid:   9, serverPredAvail: 0, serverPredAgeSec:       0, ephType: 0, ephSource: 0, ephHealth: 0, ephAgeSec:       0
+      constell: 1, svid:   8, serverPredAvail: 0, serverPredAgeSec:       0, ephType: 0, ephSource: 0, ephHealth: 0, ephAgeSec:       0
+      constell: 1, svid:   3, serverPredAvail: 0, serverPredAgeSec:       0, ephType: 0, ephSource: 0, ephHealth: 0, ephAgeSec:       0
+      constell: 1, svid:  31, serverPredAvail: 0, serverPredAgeSec:       0, ephType: 0, ephSource: 0, ephHealth: 0, ephAgeSec:       0
+      constell: 1, svid:   7, serverPredAvail: 0, serverPredAgeSec:       0, ephType: 0, ephSource: 0, ephHealth: 0, ephAgeSec:       0
+      constell: 1, svid:  22, serverPredAvail: 0, serverPredAgeSec:       0, ephType: 0, ephSource: 0, ephHealth: 0, ephAgeSec:       0
+      constell: 3, svid:   5, serverPredAvail: 0, serverPredAgeSec:       0, ephType: 0, ephSource: 0, ephHealth: 0, ephAgeSec:       0
+      constell: 3, svid:  15, serverPredAvail: 0, serverPredAgeSec:       0, ephType: 0, ephSource: 0, ephHealth: 0, ephAgeSec:       0
+      constell: 3, svid:   9, serverPredAvail: 0, serverPredAgeSec:       0, ephType: 0, ephSource: 0, ephHealth: 0, ephAgeSec:       0
+      constell: 3, svid:  17, serverPredAvail: 0, serverPredAgeSec:       0, ephType: 0, ephSource: 0, ephHealth: 0, ephAgeSec:       0
+      constell: 3, svid:   7, serverPredAvail: 0, serverPredAgeSec:       0, ephType: 0, ephSource: 0, ephHealth: 0, ephAgeSec:       0
+      constell: 3, svid:  18, serverPredAvail: 0, serverPredAgeSec:       0, ephType: 0, ephSource: 0, ephHealth: 0, ephAgeSec:       0
+      constell: 3, svid:  24, serverPredAvail: 0, serverPredAgeSec:       0, ephType: 0, ephSource: 0, ephHealth: 0, ephAgeSec:       0
+      
+  GNSS:
+    GnssMeasurement Listeners:
+    GnssNavigationMessage Listeners:
+    GnssStatus Listeners:
+      12631/com.google.android.gms[fused_location_provider]
+      12631/com.google.android.gms[fused_location_provider]
+      12631/com.google.android.gms[network_location_provider]

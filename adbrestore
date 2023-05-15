@@ -1,0 +1,3 @@
+#!/bin/bash
+
+adb restore /home/$USER/android-backup/backup.ab

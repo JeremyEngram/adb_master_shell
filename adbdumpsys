@@ -1,0 +1,1 @@
+adb shell cp /data/system && adb backup -all -f /backup/location/file.ab

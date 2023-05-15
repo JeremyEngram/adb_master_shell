@@ -1,0 +1,4 @@
+#!/bin/bash
+
+mkdir /home/$USER/android-backup
+adb backup -all -apk -shared -f /home/$USER/android-backup/20811025-SGA7-2017-all-apk-shared.ab

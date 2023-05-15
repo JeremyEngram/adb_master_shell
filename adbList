@@ -1,0 +1,68 @@
+ADB COMMANDS
+ADB Debugging
+adb devicesadb forwardadb kill-server
+Wireless
+adb connectadb usb
+Package Manager
+adb installadb uninstalladb shell pm list packagesadb shell pm pathadb shell pm clear
+File Manager
+adb pulladb pushadb shell lsadb shell cdadb shell rmadb shell mkdiradb shell touchadb shell pwdadb shell cpadb shell mv
+Network
+adb shell netstatadb shell pingadb shell netcfgadb shell ip
+Logcat
+adb logcatadb shell dumpsysadb shell dumpstate
+Screenshot
+adb shell screencapadb shell screenrecord [4.4+]
+System
+adb rootadb sideloadadb shell psadb shell topadb shell getpropadb shell setprop
+
+
+
+
+adb shell pm list packages
+Prints all packages
+
+adb shell pm list packages
+see their associated APK file
+
+adb shell pm list packages -f
+all known packages
+
+but excluding APEXes (Android Pony EXpress)
+adb shell pm list packages -a
+only show APEX packages
+
+adb shell pm list packages --apex-only
+filter to only show disabled packages
+
+adb shell pm list packages -d
+filter to only show enabled packages
+
+adb shell pm list packages -e
+filter to only show system packages
+
+adb shell pm list packages -s
+filter to only show third party packages
+
+adb shell pm list packages -3
+see the installer for the packages
+
+adb shell pm list packages -i
+ignored (used for compatibility with older releases)
+
+adb shell pm list packages -l
+also show the package UID
+
+adb shell pm list packages -U
+also include uninstalled packages
+
+adb shell pm list packages -u
+also show the version code
+
+adb shell pm list packages --show-versioncode
+filter to only show packages with the given UID
+
+adb shell pm list packages --uid UID
+only list packages belonging to the given user
+
+adb shell pm list packages --user USER_ID

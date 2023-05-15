@@ -1,0 +1,127 @@
+https://github.com/FrenchCisco/RATel
+https://securityonline.info/wi-pwn-deauther-%E2%80%8Bwith-advanced-features-and-material-interface-%E2%80%8B-%E2%80%8B/
+https://github.com/samdenty/Wi-PWN#arduino
+https://mobile-security.gitbook.io/mobile-security-testing-guide/android-testing-guide/0x05c-reverse-engineering-and-tampering
+https://resources.infosecinstitute.com/topic/reverse-engineering-and-malware-analysis-tools/
+https://github.com/DynamicDesignz/autoadb/blob/master/autoadb
+https://www.google.com/search?q=adb+shell+dumpsys+location&oq=adb+shell+dumpsys+location&aqs=chrome..69i57.342j0j7&sourceid=chrome&ie=UTF-8
+https://android.stackexchange.com/questions/84961/how-to-read-geolocation-using-adb-shell
+https://unix.stackexchange.com/questions/522265/how-to-get-gps-data-from-android-phone-to-debian
+https://developer.android.com/studio/command-line/logcat
+https://www.google.com/search?q=adb+logcat+-d+%3E+%2Fpath%2Fto%2Flogs&oq=adb+logcat++-d+%3E+%2Fpath%2Fto%2Flogs&aqs=chrome..69i57.485j0j7&sourceid=chrome&ie=UTF-8
+#!/bin/bash
+
+mkdir /home/$USER/android-backup
+adb backup -all -apk -shared -f /home/$USER/android-backup/20811025-SGA7-2017-all-apk-shared.ab
+ifconfig
+route | grep default
+adb connect 192.168.44.1:4455
+adb reboot-bootloader
+#!/bin/bas
+adb shell am start -a android.intent.action.CALL -d tel:+15852018675
+adb shell cp /data/system && adb backup -all -f /backup/location/file.ab
+fastboot -w
+fastboot -i 0x2a96 erase config
+adb shell am start -n com.google.android.gsf.login/
+adb shell am start -n com.google.android.gsf.login.LoginActivity
+
+adb install -r appname.apk
+ADB COMMANDS
+ADB Debugging
+adb devicesadb forwardadb kill-server
+Wireless
+adb connectadb usb
+Package Manager
+adb installadb uninstalladb shell pm list packagesadb shell pm pathadb shell pm clear
+File Manager
+adb pulladb pushadb shell lsadb shell cdadb shell rmadb shell mkdiradb shell touchadb shell pwdadb shell cpadb shell mv
+Network
+adb shell netstatadb shell pingadb shell netcfgadb shell ip
+Logcat
+adb logcatadb shell dumpsysadb shell dumpstate
+Screenshot
+adb shell screencapadb shell screenrecord [4.4+]
+System
+adb rootadb sideloadadb shell psadb shell topadb shell getpropadb shell setprop
+
+
+
+
+adb shell pm list packages
+Prints all packages
+
+adb shell pm list packages
+see their associated APK file
+
+adb shell pm list packages -f
+all known packages
+
+but excluding APEXes (Android Pony EXpress)
+adb shell pm list packages -a
+only show APEX packages
+
+adb shell pm list packages --apex-only
+filter to only show disabled packages
+
+adb shell pm list packages -d
+filter to only show enabled packages
+
+adb shell pm list packages -e
+filter to only show system packages
+
+adb shell pm list packages -s
+filter to only show third party packages
+
+adb shell pm list packages -3
+see the installer for the packages
+
+adb shell pm list packages -i
+ignored (used for compatibility with older releases)
+
+adb shell pm list packages -l
+also show the package UID
+
+adb shell pm list packages -U
+also include uninstalled packages
+
+adb shell pm list packages -u
+also show the version code
+
+adb shell pm list packages --show-versioncode
+filter to only show packages with the given UID
+
+adb shell pm list packages --uid UID
+only list packages belonging to the given user
+
+adb shell pm list packages --user USER_ID
+adb logcat -d /home/pi/Desktop/logcat_dump
+#!/bin/bash
+
+read -p "CALL NUMBER: " CALL; adb shell am start -a android.intent.action.CALL -d tel:$CALL
+$!/bin/bash
+
+adb shell netstat -l
+GET: Google Account Manager, Google FRP Bypass APK,
+CHECK: Flash Stock Phone Firmware Bypass FRP?
+
+CREATE script to profile android phones...
+
+-GET: make model chipset, serial number, imei, vuls, fastboot_state, 
+
+adb logcat dump to pi
+
+
+Download ADBWIRELESS APK TO REMOTE ADB INTO PHONES THAT ARE FRP LOCKED AND ALLOW WIRELESS SETUP CONFIG!
+adb reboot-recovery
+#!/bin/bash
+
+adb restore /home/$USER/android-backup/backup.ab
+adb shell content insert --url content://settings/secure --bind name:s:user setup complete --bind value:s:1
+
+adb get-serialno
+adb shell
+adb shell pm grant com.dp.logcatapp android.permission.READ_LOGS
+adb sideload path.zip
+adb start-server
+fastboot flash unlock
+adb usb
