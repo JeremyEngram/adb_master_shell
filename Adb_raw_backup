@@ -1,0 +1,38 @@
+
+
+#!/bin/bash
+
+# Ensure adb is installed
+if ! command -v adb &> /dev/null
+then
+    echo "adb could not be found, please install it first."
+    exit 1
+fi
+
+# Ensure a device is connected
+adb devices | grep -w "device" > /dev/null
+if [ $? -ne 0 ]; then
+    echo "No device connected. Please connect your device and enable USB debugging."
+    exit 1
+fi
+
+# Create a directory to store the backup
+BACKUP_DIR="adb_backup"
+mkdir -p $BACKUP_DIR
+
+# Backing up recovery.img
+echo "Backing up recovery.img..."
+adb shell su -c "dd if=/dev/block/bootdevice/by-name/recovery of=/sdcard/recovery.img"
+adb pull /sdcard/recovery.img $BACKUP_DIR/recovery.img
+
+# Check if the backup was successful
+if [ -f "$BACKUP_DIR/recovery.img" ]; then
+    echo "Backup successful. The recovery image is saved in $BACKUP_DIR/recovery.img"
+else
+    echo "Backup failed."
+fi
+
+# Clean up the device
+adb shell rm /sdcard/recovery.img
+
+echo "Done."
